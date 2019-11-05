@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Gaby Website </title>
+</head>
+<body>
+  <ul>
+      {% for pup in puppies %}
+      <li>{{pup}}</li>
+      {% endfor %}
+  </ul>
+
+
+   {% if user_log %}
+    <p>Welcome again!</p>
+   {% else %}
+    <p> Please log in </p>
+   {% endif %}
+
+
+
+
+</body>
+</html>
